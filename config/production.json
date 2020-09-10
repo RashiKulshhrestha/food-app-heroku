@@ -1,4 +1,6 @@
 {
     "mongoURL" : "mongodb+srv://rashi:Class@1996@cluster0.nwasn.mongodb.net/food-app?retryWrites=true&w=majority",
-    "jwtSecret" : "secret"
+    "jwtSecret" : "mysecrettoken",
+    "githubClientId": "41234bad1dab227aec75",
+    "githubSecret": "e10f1b58a195238bec5bd4e63a01c30f0574523a"
 }
