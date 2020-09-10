@@ -1,0 +1,69 @@
+.order-list-container{
+    background-image: linear-gradient(to top, rgb(148, 17, 17) , orange);
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+}
+.order-list-header{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color:rgb(245, 235, 235);
+    font-size: 28px;
+    font-weight: 800;
+    text-align: center;
+    background-image: linear-gradient(to left,rgb(146, 31, 31) , rgb(248, 178, 47),rgb(146, 31, 31) );
+    border-radius: 20px;
+    border: 2px dotted rgb(148, 17, 17);
+    margin: 10px;
+    padding: 10px;
+}
+.order-list-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px;
+    font-style: italic;
+    color: rgb(148, 17, 17);
+    text-align: center;
+    background-color: rgb(250, 179, 49);
+    border-radius:20px;
+    border:2px solid rgb(148, 17, 17);
+    margin: 10px;
+}
+.placeorder-container{
+    background-color: orange;
+    border: 5px solid rgb(148, 17, 17);
+    border-radius: 10%;
+    box-shadow: 10px 10px 20px rgb(148, 17, 17);
+    height: 400px;
+    width: 400px;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    color: rgb(148, 17, 17);
+}
+
+.order-heading{
+    font-size: 36px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.field-content{
+    display: block;
+}
+form input{
+    height:25px;
+    width: 80px;
+    border-radius: 5px;
+    background-color: rgb(250, 208, 129);
+    margin:10px;
+}
+form label {
+    font-weight: 500;
+    padding:10px;
+}
+.order-details{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+}

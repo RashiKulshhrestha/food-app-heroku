@@ -1,0 +1,86 @@
+.owner-signup-container{
+    height: 100vh;
+    width: 100vw;
+    border: 2px solid rgb(148, 17, 17);
+    background-color: rgb(247, 248, 192);
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+    display:flex;
+    justify-content: space-evenly;
+}
+.partner-tagline{
+    font-family: cursive;
+    padding: 0px;
+    margin:30px 0px 0px 30px;
+    color: rgb(148, 17, 17);
+}
+h3{
+    margin: 0px auto;
+}
+.aahar{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 4px;
+    padding-top: 20px;
+    color: rgb(148, 17, 17);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.aahar-tagline{
+    color: #f3a006f1;
+    font-weight: 700;
+    font-size: 12px;
+    font-style: italic;
+    font-family: cursive;
+    padding-top: 0px;
+}
+h1{
+    color: rgb(148, 17, 17);
+    font-size: 36px;
+    text-align: center;
+    padding-top: 0;
+}
+.form{
+    height: 100vh;
+    width: 100vw;
+    background-color: orange;
+    border-top-left-radius: 40%;
+    border-bottom-left-radius: 40%;
+}
+.form-input{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    align-items: center;
+}
+.owner-signup-label{
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(148, 17, 17);
+    display: block;
+    margin-left: 150px ;
+    padding-left: 60px;
+}
+.owner-signup-input{
+    height: 30px;
+    width: 230px;
+    margin: 10px auto;
+    outline: none;
+    background-color: orange;
+    color: rgb(148, 17, 17);
+    border-radius: 5px;
+    font-size: large;
+}
+#owner-signup-btn{
+    display: block;
+    height: 40px;
+    width: 300px;
+    border-radius: 10px;
+    margin:15px 0px 10px 25px;
+    font-size: larger;
+    border: none;
+    background-color: rgb(148, 17, 17);
+    color: orange;
+    cursor: pointer;
+    margin-left:350px;
+}
