@@ -20,14 +20,14 @@ const Orders = ({ getOrders, order: { orders, loading } }) => {
         <div>Order ID</div>
         <div>No. of Meals</div>
         <div>No. of Days</div>
-        <div>Status</div>
+        <div>Price</div>
       </div>
       {orders.map((order) => (
         <div className="order-list-content">
           <div>{order._id}</div>
           <div>{order.no_of_meals}</div>
           <div>{order.no_of_days}</div>
-          <div>{order.status}</div>
+          <div>{order.total_amount}</div>
         </div>
       ))}
       </div>
