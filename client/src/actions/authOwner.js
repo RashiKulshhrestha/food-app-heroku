@@ -18,7 +18,7 @@ export const loadOwner = () => async (dispatch) => {
   
   try {
     console.log("before loadOwner");
-    const res = await axios.get("http://localhost:5000/api/authOwner");
+    const res = await axios.get("/api/authOwner");
     console.log("loadOwner");
     dispatch({
       type: OWNER_LOADED,
@@ -55,8 +55,8 @@ export const register = ({ service_name,
     city,
     postal_code });
   try {
-    const res = await axios.post("http://localhost:5000/api/owners", body, config);
-    const ownerID = await axios.get(`http://localhost:5000/api/owners/${email}`);
+    const res = await axios.post("/api/owners", body, config);
+    const ownerID = await axios.get(`/api/owners/${email}`);
     dispatch({
       type: REGISTER_OWNER_SUCCESS,
       payload:{res: res.data,
@@ -83,8 +83,8 @@ export const login = (email, password) => async (dispatch) => {
   };
   const body = JSON.stringify({ email, password });
   try {
-    const res = await axios.post("http://localhost:5000/api/authOwner", body, config);
-    const ownerID = await axios.get(`http://localhost:5000/api/owners/${email}`);
+    const res = await axios.post("/api/authOwner", body, config);
+    const ownerID = await axios.get(`/api/owners/${email}`);
     console.log(email);
     console.log(ownerID);
     dispatch({

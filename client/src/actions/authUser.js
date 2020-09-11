@@ -17,7 +17,7 @@ export const loadUser = () => async (dispatch) => {
   }
   
   try {
-    const res = await axios.get("http://localhost:5000/api/authUser");
+    const res = await axios.get("/api/authUser");
     console.log("loadUser");
     dispatch({
       type: USER_LOADED,
@@ -39,8 +39,8 @@ export const register = ({ name, email, mobile, password }) => async (dispatch) 
   };
   const body = JSON.stringify({ name, email, mobile, password });
   try {
-    const res = await axios.post("http://localhost:5000/api/users", body, config);
-    const user_id = await axios.get(`http://localhost:5000/api/users/${email}`);
+    const res = await axios.post("/api/users", body, config);
+    const user_id = await axios.get(`/api/users/${email}`);
     console.log(email);
     console.log(res.data);
     dispatch({
@@ -69,8 +69,8 @@ export const login = (email, password) => async (dispatch) => {
   };
   const body = JSON.stringify({ email, password });
   try {
-    const res = await axios.post("http://localhost:5000/api/authUser", body, config);
-    const user_id = await axios.get(`http://localhost:5000/api/users/${email}`);
+    const res = await axios.post("/api/authUser", body, config);
+    const user_id = await axios.get(`/api/users/${email}`);
     console.log(email);
     console.log(res.data);
     dispatch({

@@ -19,7 +19,7 @@
     outline: none;
 }
 .close-window:hover{
-    opacity: 70%;
+    opacity: 90%;
 }
 header{
     height: 90px;
@@ -56,10 +56,6 @@ form{
     border: 1px solid rgb(148, 17, 17);
     outline: none;
 }
-input[type="checkbox" i]{
-    margin: 10px 5px 0px 25px;
-    cursor: pointer;
-}
 .service-provider{
     display: inline;
     cursor: default;
@@ -75,6 +71,7 @@ input[type="checkbox" i]{
     background-color: rgb(148, 17, 17);
     color: orange;
     cursor: pointer;
+    outline: none;
 }
 .ownerlogin-btn{
     display: none;
@@ -87,6 +84,7 @@ input[type="checkbox" i]{
     background-color: rgb(148, 17, 17);
     color: orange;
     cursor: pointer;
+    outline: none;
 }
 footer{
     border: none;

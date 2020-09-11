@@ -10,7 +10,7 @@ import {
 
 export const getOwners = () => async(dispatch) =>{
     try {
-        const res = await axios.get("http://localhost:5000/api/owners");
+        const res = await axios.get("/api/owners");
     
         dispatch({
           type: GET_OWNERS,
@@ -33,7 +33,7 @@ export const addMenu = (owner_id, formData) => async (dispatch) => {
   };
   try {
     const res = await axios.put(
-      `http://localhost:5000/api/owners/${owner_id}`,
+      `/api/owners/${owner_id}`,
       formData,
       config
     );

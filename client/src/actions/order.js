@@ -11,7 +11,7 @@ import {
 export const getOrders = (owner_id) => async(dispatch) =>{
     try {
       console.log(owner_id);
-        const res = await axios.get(`http://localhost:5000/api/orders/${owner_id}`);
+        const res = await axios.get(`/api/orders/${owner_id}`);
         console.log(res.data);
         dispatch({
           type: GET_ORDERS,
@@ -49,7 +49,7 @@ export const placeOrder = ({
     user_id,
     owner_id});
   try {
-      const res = await axios.post("http://localhost:5000/api/orders",body,config);
+      const res = await axios.post("/api/orders",body,config);
       console.log(res.data);
       dispatch({
         type: PLACE_ORDER,
