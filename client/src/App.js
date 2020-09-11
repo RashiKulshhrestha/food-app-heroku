@@ -1,11 +1,11 @@
 import React, { Fragment } from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import "./App.css";
-import Home from "../components/auth/Home";
+import Home from "../src/components/auth/Home";
 
 import { Provider } from "react-redux";
-import store from "../store";
-import { Routes } from "../components/routing/Routes";
+import store from "./store";
+import { Routes } from "../src/components/routing/Routes";
 
 
 const App = () => {
